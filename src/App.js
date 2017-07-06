@@ -3,7 +3,7 @@ import logo from './fidget1.png';
 import './App.css';
 import axios from 'axios';
 
-const root = 'http://gf-fidgetspinner.herokuapp.com/api/users'
+const root = 'http://gf-fidgetspinner.herokuapp.com/api/best_times'
 
 class App extends Component {
   constructor() {

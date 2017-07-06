@@ -5,6 +5,7 @@
 .App-logo {
   animation: App-logo-spin infinite 0.5s linear;
   height: 80px;
+  
 }
 
 .App-header {
@@ -12,10 +13,12 @@
   height: 150px;
   padding: 20px;
   color: white;
+  font-family: 'Bangers', cursive;
 }
 
 .App-intro {
   font-size: large;
+  font-family: 'Oswald', sans-serif;
 }
 
 @keyframes App-logo-spin {

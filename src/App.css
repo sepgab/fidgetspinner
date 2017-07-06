@@ -1,27 +1,138 @@
+body {
+  background-color: #ffdf2a;
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }
 
+h2 {
+  margin-top: 80px;
+}
+
 .App-logo {
-  animation: App-logo-spin infinite 0.5s linear;
-  height: 80px;
-  
+  position: relative;
+  top: 60px;
+  right:40px;
+  animation: App-logo-spin infinite 0.4s linear;
+  height: 70px;
 }
 
 .App-header {
-  background-color: #ffb400;
-  height: 150px;
+  position: fixed;
+  top: -40px;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-image: url("bubble.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px;
-  color: white;
   font-family: 'Bangers', cursive;
 }
 
-.App-intro {
+p {
   font-size: large;
   font-family: 'Oswald', sans-serif;
+}
+
+.App-intro {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("bubble_left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  font-family: 'Bangers', cursive;
+  line-height: 180px;
+  font-size: 24px;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 30px; /* <-- adjust this */
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-style: oblique;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: rgb(21, 70, 130) 0 1px 0;
+  box-shadow: 5px 5px 0 black;
+  background-color: #219e7b;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+button:active {
+  width: 130px;
+  height: 40px;
+  margin: 15px 5px;
+  background-color: #ec4141;
+  font-size: 120%;
+}
+
+button:focus {
+  background-color: #ec4141;
+  font-size: 110%;
+}
+
+.tables {
+  border-collapse: collapse;
+  text-align: left;
+  width: 500px;
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
+  margin: auto;
+}
+
+.tables thead th {
+  color: black;
+  border-bottom: 2px solid #219e7b;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.tables tbody td, .container {
+  min-width: 80px;
+  color: black;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: normal;
+  margin: 2px;
+}
+
+.tables tbody .alt td {
+  color: #219e7b;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.avatarImg {
+  position: relative;
+  left: -20px;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #219e7b;
+  border-radius: 30px;
 }

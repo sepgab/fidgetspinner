@@ -2,6 +2,9 @@
   "name": "fidgetspinner",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=4.3.0"
+  },
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

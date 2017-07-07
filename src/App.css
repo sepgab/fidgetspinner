@@ -84,6 +84,7 @@ button {
   border: 1px solid black;
   border-radius: 15px;
   margin: 20px;
+  outline-style: none;
 }
 
 button:active {
@@ -92,6 +93,7 @@ button:active {
   margin: 15px 5px;
   background-color: #ec4141;
   font-size: 120%;
+  outline-style: none;
 }
 
 button:focus {

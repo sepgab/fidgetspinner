@@ -9,20 +9,25 @@ body {
 }
 
 h2 {
-  margin-top: 80px;
+  font-size: 40px;
 }
 
 .App-logo {
   position: relative;
-  top: 60px;
-  right:40px;
+  top: -100px;
+  right:0;
   animation: App-logo-spin infinite 0.4s linear;
   height: 70px;
 }
 
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .App-header {
   position: fixed;
-  top: -40px;
+  top: 140px;
   right: 0;
   width: 300px;
   height: 300px;
@@ -33,14 +38,19 @@ h2 {
   font-family: 'Bangers', cursive;
 }
 
+.App-header h2 {
+  position: relative;
+  top: -50px;
+  left: -20px;
+}
+
 p {
-  font-size: large;
   font-family: 'Oswald', sans-serif;
 }
 
 .App-intro {
   position: fixed;
-  top: 50px;
+  top: -40px;
   left: 0;
   width: 200px;
   height: 200px;
@@ -59,10 +69,6 @@ span {
   line-height: 30px; /* <-- adjust this */
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 button {
   width: 100px;
@@ -96,7 +102,7 @@ button:focus {
 .tables {
   border-collapse: collapse;
   text-align: left;
-  width: 500px;
+  width: 350px;
   font-family: 'Oswald', sans-serif;
   overflow: hidden;
   margin: auto;
@@ -111,7 +117,7 @@ button:focus {
 }
 
 .tables tbody td, .container {
-  min-width: 80px;
+  min-width: 50px;
   color: black;
   font-size: 16px;
   line-height: 40px;
@@ -129,10 +135,58 @@ button:focus {
 }
 
 .avatarImg {
-  position: relative;
-  left: -20px;
   width: 25px;
   height: 25px;
   border: 3px solid #219e7b;
   border-radius: 30px;
+  margin-right: 10px;
+}
+
+.arrowleft {
+  position: relative;
+  top: -150px;
+  left: -200px;
+  width: 100px;
+  height: 150px;
+}
+
+.arrowright {
+  position: relative;
+  top: -150px;
+  left: 200px;
+  width: 100px;
+  height: 150px;
+}
+
+.invisible {
+  display: none;
+}
+
+.loginArea {
+  position: fixed;
+  top: 200px;
+  left:50px;
+}
+
+.change {
+  width:250px;
+  height:250px;
+  animation: arrows-spin infinite alternate 0.6s linear;
+}
+
+@keyframes arrows-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(20deg); }
+}
+
+.loginArea p {
+  position: relative;
+  top:-260px;
+  margin-top: 120px;
+  font-family: 'Bangers', cursive;
+  font-size: 36px;
+}
+
+.loginArea p span {
+  color: #219e7b;
 }

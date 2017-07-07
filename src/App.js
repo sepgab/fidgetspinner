@@ -4,7 +4,7 @@ import Table from "./Table";
 import './App.css';
 import axios from 'axios';
 
-const root = 'http://gf-fidgetspinner.herokuapp.com'
+const root = 'https://gf-fidgetspinner.herokuapp.com'
 
 class App extends Component {
   constructor() {
